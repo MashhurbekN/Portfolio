@@ -1,0 +1,109 @@
+.nav {
+  display: flex;
+  padding-right: 98px;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+
+  &__i {
+    color: white;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__h2 {
+    margin-top: -4px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right top, royalblue, rgb(20, 84, 174), rgb(154, 192, 216));
+    background-size: 50% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    animation: gradientAnim 7.5s ease alternate infinite;
+
+  }
+
+  &__item a {
+    margin-left: 36px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+  }
+
+  &__item:first-child a {
+    color: royalblue;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+  }
+
+  &__item:last-child a {
+    color: royalblue;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    width: 164px;
+    height: 73px;
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid royalblue;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+}
+
+@media (max-width:991px) {
+  .nav__list {
+    display: none;
+  }
+
+  .nav__burger {
+    display: inline-block;
+    background-color: transparent;
+    color: royalblue;
+    border: 2px solid royalblue;
+    width: 50px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width:575px) {
+  .nav {
+
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .nav__burger {
+    display: inline-block;
+    background-color: transparent;
+    color: royalblue;
+    border: 2px solid royalblue;
+    width: 50px;
+    margin-bottom: 5px;
+  }
+}

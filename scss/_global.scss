@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: auto;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.784);
+}
+
+main {
+    background-color: rgba(79, 79, 79, 0.784);
+}
+
+.section {
+    background-color: rgba(136, 136, 136, 0.335);
+}
+
+.works {
+    background-color: rgb(48, 48, 48);
+}
+.contacts{
+    background-color: rgb(192, 192, 192);
+    height: 250px;
+}
