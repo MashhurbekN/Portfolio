@@ -86,7 +86,7 @@
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 }
-@media (max-width:380px) {
+@media (max-width:380px) , (max-width:412px) {
     .about__h2 span{
         font-size: 35px;
         

@@ -10,69 +10,70 @@
     color: white;
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__h2 {
+      margin-top: -4px;
+      text-transform: uppercase;
+      background-image: linear-gradient(to right top, royalblue, rgb(20, 84, 174), rgb(154, 192, 216));
+      background-size: 50% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+      text-align: center;
+      padding-top: 20px;
+      animation: gradientAnim 7.5s ease alternate infinite;
+
+    }
+
+    &__item a {
+      margin-left: 36px;
+      color: rgb(255, 255, 255);
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.5px;
+    }
+
+    &__item:first-child a {
+      color: royalblue;
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.5px;
+    }
+
+    &__item:last-child a {
+      color: royalblue;
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.5px;
+      width: 164px;
+      height: 73px;
+      flex-shrink: 0;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid royalblue;
+    }
+
+    &__burger {
+      display: none;
+    }
   }
 
-  &__h2 {
-    margin-top: -4px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right top, royalblue, rgb(20, 84, 174), rgb(154, 192, 216));
-    background-size: 50% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 20px;
-    animation: gradientAnim 7.5s ease alternate infinite;
-
-  }
-
-  &__item a {
-    margin-left: 36px;
-    color: rgb(255, 255, 255);
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.5px;
-  }
-
-  &__item:first-child a {
-    color: royalblue;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.5px;
-  }
-
-  &__item:last-child a {
-    color: royalblue;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.5px;
-    width: 164px;
-    height: 73px;
-    flex-shrink: 0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid royalblue;
-  }
-
-  &__burger {
-    display: none;
-  }
-
-}
 
 @media (max-width:991px) {
   .nav__list {
